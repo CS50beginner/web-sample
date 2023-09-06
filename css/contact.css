@@ -1,0 +1,49 @@
+body {
+  background-image: url("../images/contact-page-bg.jpg");
+  background-size: cover;
+}
+h1 {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 50px;
+}
+label {
+  font-family: Georgia, "Times New Roman", Times, serif;
+  font-size: 20px;
+  padding: 10px;
+}
+
+form > input,
+textarea {
+  background-color: #fff;
+  border: #fff;
+}
+
+h1,
+#contact-form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+input {
+  height: 30px;
+  width: 20%;
+}
+
+textarea {
+  height: 200px;
+  width: 50%;
+}
+
+button {
+  background-color: blue;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+a {
+  color: #fff;
+}

@@ -1,0 +1,143 @@
+body {
+  height: 100vh;
+  margin: 0;
+  justify-content: center;
+}
+body nav {
+  padding: 45px;
+  padding-top: 20px;
+  margin: 0;
+  width: 100%;
+  height: 50px;
+  background-color: rgb(0, 0, 0);
+}
+
+nav li {
+  display: inline;
+}
+
+#theme-change-dark {
+  display: flex;
+  justify-content: flex-end;
+}
+
+a {
+  color: white;
+  padding: 20px;
+  text-decoration: none;
+}
+nav a:hover {
+  background-color: blue;
+}
+
+img {
+  width: 150px;
+  height: 200px;
+}
+
+#hero {
+  background-image: url("../images/hero-section-pen-image.jpg");
+  height: 50vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+.hero-content {
+  color: white;
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+  padding-top: 100px;
+  padding-right: 150px;
+}
+.hero-content > h1 {
+  font-family: "Great Vibes", cursive;
+  font-size: 70px;
+}
+
+header {
+  background-image: linear-gradient(to left, #ee82ee, #d6d5d5);
+  width: 100%;
+  height: fit-content;
+  padding: 30px;
+  text-align: center;
+}
+
+.product-container {
+  display: flex;
+  justify-content: center;
+}
+
+.product {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  margin: 10px;
+}
+
+.product img {
+  width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+
+.product h3 {
+  font-size: 1.2rem;
+}
+
+.product p {
+  font-size: 0.9rem;
+}
+
+button {
+  background-color: blue;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 20px;
+}
+#cart {
+  border: 2px solid gold;
+  padding: 20px;
+  width: 300px;
+  margin: 20px;
+  float: right;
+}
+
+#cart-items {
+  list-style: none;
+  padding: 0;
+  border: 1px solid blue;
+}
+
+#check-out-button {
+  background-color: gold;
+  color: black;
+  font-weight: bold;
+}
+
+h5 > a {
+  color: black;
+  background-color: #ee82ee;
+  border: solid 1px slategray;
+}
+
+.footer-container {
+  background-image: linear-gradient(to left, #ee82ee, #d6d5d5);
+  width: 100%;
+  height: fit-content;
+  padding: 30px;
+  text-align: center;
+}
+.custom-width {
+  width: 400px;
+  margin-left: 450px;
+}
+
+#back-to-top {
+  font-size: larger;
+  color: black;
+  cursor: pointer;
+}

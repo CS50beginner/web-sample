@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Inkfluence</title>
+  <link rel="icon" href="./images/favicon.ico">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="./css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body data-bs-theme="light">
+
+  <!-- Home page Navigation bar -->
+  <section id="home">
+    <nav>
+      <div>
+        <ul>
+          <li> <a href="./index.html"> Home</a></li>
+          <li><a href="#products">Products</a></li>
+          <li> <a href="#contact">Contact</a></li>
+          <li id="theme-change-dark">
+            <div class="form-check form-switch">
+              <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="yellow" class="bi bi-sun"
+                viewBox="0 0 16 16">
+                <path
+                  d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z" />
+              </svg><!--sun icon-->
+              <input class="form-check-input" type="checkbox" role="switch" id="flexSwitchCheckChecked"
+                onclick="myFunction()" />
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </section>
+
+  <!-- Heros Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h1>Write <span style="color: violet">Your Story</span> with Elegance
+      </h1>
+      <h3>Explore Our Exquisite Pen Collection!</h3>
+    </div>
+  </section>
+
+   <!-- Products Section -->
+  <header id="products">
+    <h1>Products</h1>
+  </header>
+
+  <section>
+    <div class="product-container">
+      <div class="product">
+        <img src="./images/pilot1.jpg" alt="Pen 1">
+        <h3>Pen 1</h3>
+        <h2>$40</h2>
+        <button class="add-to-cart-btn">Add to cart</button>
+      </div>
+
+      <div class="product">
+        <img src="./images/pilot-capless-ls-blue-fountain-pen.png" alt="Pen 2">
+        <h3>Pen 2</h3>
+        <h2>$30</h2>
+        <button class="add-to-cart-btn">Add to cart</button>
+      </div>
+
+      <div id="cart">
+        <h3>Shopping Cart <i class="fas fa-shopping-cart" style="color: #0944aa;"></i>
+        </h3>
+        <ul id="cart-items"></ul>
+        <p>Total Amount:$<span id="total-cart-items">0</span></p>
+        <button id="check-out-button">CHECK OUT</button>
+      </div>
+    </div>
+  </section>
+
+
+  <!--Footer section with bootstrap example code-->
+  <section>
+    <div class="footer-container">
+      <footer>
+        <div class="row">
+          <div class="col-md-10 offset-md-1 mb-5 my-4">
+            <h5 id="contact"><a href="./contact.html">Contact Us</a></h5>
+            <ul class="nav flex-column">
+            </ul>
+          </div>
+          <div class="col-md-10 offset-md-1 mb-3">
+            <form>
+              <h5>Subscribe to our newsletter</h5>
+              <p>Monthly digest of what's new and exciting from us.</p>
+              <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                <label for="newsletter1" class="visually-hidden">Email address</label>
+                <input id="newsletter1" type="email" class="form-control custom-width" placeholder="Email address"
+                  required>
+                <button id="subscribe-button" class="btn btn-primary" type="button">Subscribe</button>
+              </div>
+            </form>
+          </div>
+        </div>
+
+        <!--Copyright footer-->
+        <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+          <p>© <span id="year"></span> Inkfluence. All rights reserved.</p>
+          <ul class="list-unstyled d-flex">
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#twitter"></use>
+                </svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#instagram"></use>
+                </svg></a></li>
+            <li class="ms-3"><a class="link-body-emphasis" href="#"><svg class="bi" width="24" height="24">
+                  <use xlink:href="#facebook"></use>
+                </svg></a></li>
+          </ul>
+        </div>
+        <div id="back-to-top"><i class="fa-solid fa-arrow-up"></i> Back To Top</div>
+      </footer>
+    </div>
+  </section>
+
+  <script src="index.js" charset="UTF-8"></script>
+</body>
+
+</html>
